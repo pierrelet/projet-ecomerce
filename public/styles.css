@@ -1,0 +1,201 @@
+/* RESET GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Police globale */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+header a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Main content */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Grille de produits */
+.catalogue {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.catalogue .product {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.catalogue .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.catalogue .product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.catalogue .product .price {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.catalogue .product button {
+    margin-top: 10px;
+}
+
+/* Style général pour le body */
+body {
+    display: flex;
+    flex-direction: column; /* Organise les éléments du body en colonne */
+    min-height: 100vh; /* L'élément body doit occuper toute la hauteur de la fenêtre */
+    margin: 0; /* Retirer les marges par défaut */
+}
+
+/* Contenu principal */
+main {
+    flex: 1; /* Cette propriété permet au contenu principal de prendre toute la place disponible */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px; /* Un peu d'espace entre le contenu et le footer */
+}
+
+
+
+/* Formulaires */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .catalogue {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .catalogue .product img {
+        height: 150px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .catalogue {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+}
